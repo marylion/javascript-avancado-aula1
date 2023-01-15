@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=""></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+    <script src="./arrays.js"></script>
+    <script src="./objetos.js"></script>
+    <script src="./funcao.js"></script>
+
     <style>
         body {
             background:rgb(0, 0, 0);
             color: white;
+        }
+        #codigoComCor{
+            height: 100px;
+    
         }
     </style>
     <title>JS Avançado Revisão JS</title>
@@ -15,22 +25,22 @@
 <body>
     <h1>Semana 1 - Introdução ao avançado</h1>
     <h2>Objetivo de introduzir os estudos ao JavaScript avançado, revisando conteúdos que serão úteis ao longo do curso</h2>
-    <div  class="arrays">
+    <div>
         <h3>Arrays</h3>
         <p>Um array é um tipo de variável especial ou objeto que permite o armazenamento e estruturação de um conjunto de dados em um único nome, ou seja é uma variável especial que pode conter mais de um valor.</p>
         <p>As Arrays são muito utilizadas para representar listas de itens.</p>
         <p>Sua sintaxe:</p>
 
-        <div>
+        <div id="codigoComCor">
             <pre>
                 <code>
-                    <span style="color:rgb(51, 248, 29)">let</span>  array_name = [<span style="color:rgb(204, 248, 29)"><i>item1, item2, item3, ... </i></span>]; 
+                    let lista = [item1, item2, item3]; 
                 </code>
             </pre>
         </div>
     </div>
 
-    <div  class="objetos">
+    <div>
         <h3>Objetos</h3>
         <p>O objeto pode ser visto como um acervo (coleção) de propriedades, e estas propriedades são definidas como uma sintaxe de par chave:valor, ou seja,a propriedade é uma associação entre um nome (ou chave) e um valor, onde chave pode ser uma string enquanto que o valor pode ser uma informação qualquer ou  pode ser uma função, que é então considerada um método do objeto.</p>
         
@@ -52,7 +62,7 @@
         </div>
     </div>
 
-    <div  class="funcoes">
+    <div>
         <h3>Funções</h3>
         <p>Em linguagens de programação as funções podem ser definidas como subconjuntos de linhas de códigos, como se fosse um subprograma, que pode ser chamado por outro, ou seja, assim como nos laços de repetição, que nos permite ter blocos de código que vão ser repetidos, nas funções também podem podemos fazer blocos, que serão utilizados em diferentes locais do código e até mesmo repetidas vezes. Além disso, as funções podem receber argumentos, ou seja, receber dados para usar dentro dos blocos de código. </p>
         <p>Sua sintaxe:</p>
@@ -102,6 +112,13 @@
             console.log(lista);
         }
 
+    </script>
+
+    <!-- Costumizar A janela que aparece -->
+    <script type="text/javascript">
+        var e = ace.edit("codigoComCor");
+        e.getSession().setMode("ace/mode/javascript");
+        e.setTheme("ace/theme/terminal")
     </script>
 </body>
 </html>
