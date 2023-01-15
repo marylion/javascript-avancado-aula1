@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background:rgb(0, 0, 0);
+            color: white;
+        }
+    </style>
+    <title>JS Avançado Revisão JS</title>
+</head>
+<body>
+    <h1>Semana 1 - Introdução ao avançado</h1>
+    <h2>Objetivo de introduzir os estudos ao JavaScript avançado, revisando conteúdos que serão úteis ao longo do curso</h2>
+    <div  class="arrays">
+        <h3>Arrays</h3>
+        <p>Um array é um tipo de variável especial ou objeto que permite o armazenamento e estruturação de um conjunto de dados em um único nome, ou seja é uma variável especial que pode conter mais de um valor.</p>
+        <p>As Arrays são muito utilizadas para representar listas de itens.</p>
+        <p>Sua sintaxe:</p>
+
+        <div>
+            <pre>
+                <code>
+                    <span style="color:rgb(51, 248, 29)">let</span>  array_name = [<span style="color:rgb(204, 248, 29)"><i>item1, item2, item3, ... </i></span>]; 
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div  class="objetos">
+        <h3>Objetos</h3>
+        <p>O objeto pode ser visto como um acervo (coleção) de propriedades, e estas propriedades são definidas como uma sintaxe de par chave:valor, ou seja,a propriedade é uma associação entre um nome (ou chave) e um valor, onde chave pode ser uma string enquanto que o valor pode ser uma informação qualquer ou  pode ser uma função, que é então considerada um método do objeto.</p>
+        
+        <p>Sua sintaxe:</p>
+        <div>
+            <pre>
+                <code>
+                    <span style="color:rgb(51, 248, 29)">let</span> object_name(parâmetros)</span>  = {chave: valor1, chave: valor2, ... }
+
+                    ou
+
+                    <span style="color:rgb(51, 248, 29)">let</span> object_name(parâmetros)</span>  = {
+                        chave: valor1, 
+                        chave: valor2, 
+                        ... 
+                    }
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div  class="funcoes">
+        <h3>Funções</h3>
+        <p>Em linguagens de programação as funções podem ser definidas como subconjuntos de linhas de códigos, como se fosse um subprograma, que pode ser chamado por outro, ou seja, assim como nos laços de repetição, que nos permite ter blocos de código que vão ser repetidos, nas funções também podem podemos fazer blocos, que serão utilizados em diferentes locais do código e até mesmo repetidas vezes. Além disso, as funções podem receber argumentos, ou seja, receber dados para usar dentro dos blocos de código. </p>
+        <p>Sua sintaxe:</p>
+        <div>
+            <pre>
+                <code>
+                    <span style="color:rgb(51, 248, 29)">function</span>  nome_da_funcao(parâmetros) = {
+                        <span style="color:rgb(163, 70, 249)">return </span> parâmetro; 
+                    }
+                </code>
+            </pre>
+        </div>
+        
+    </div>
+    <div>
+        <pre>
+            <code>
+    
+                <span style="color:chartreuse">let</span>  lista = [
+                    <span style="color:coral">{"descricao":"Estudar JS", "local":"IFMG", "hora":"21:00"},
+                    {"descricao":"Fazer atividades", "local":"Casa", "hora":"08:00"},
+                    {"descricao":"Ler livro de JS", "local":"Casa", "hora":"09:00"}</span> 
+                ];
+                // console.log(lista);
+        
+                <span style="color:rgb(53, 53, 235)">function</span>  addLista(descricao, local, hora) {
+                    let novoElemento = <span style="color:coral">{"descricao": descricao, "local": local, "hora":hora}</span>;
+                    lista.push(novoElemento);
+                    console.log(lista);
+                }
+            </code>
+        </pre>
+    </div>
+
+    <script>
+        
+        let lista = [
+            {"descricao":"Estudar JS", "local":"IFMG", "hora":"21:00"},
+            {"descricao":"Fazer atividades", "local":"Casa", "hora":"08:00"},
+            {"descricao":"Ler livro de JS", "local":"Casa", "hora":"09:00"}
+        ];
+        // console.log(lista);
+
+        function addLista(descricao, local, hora) {
+            let novoElemento = {"descricao": descricao, "local": local, "hora":hora};
+            lista.push(novoElemento);
+            console.log(lista);
+        }
+
+    </script>
+</body>
+</html>
